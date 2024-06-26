@@ -32,9 +32,6 @@ class Variation(models.Model):
     is_active           = models.BooleanField(default=True)
     created_date        = models.DateTimeField(auto_now=True)
 
-
-
-
 class ReviewRating(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     user = models.ForeignKey(Account, on_delete=models.CASCADE)
